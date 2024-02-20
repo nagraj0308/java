@@ -23,7 +23,7 @@ public class prog21Client {
             dout.close();
             s.close();
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println(e.toString());
         }
     }
 }  

@@ -1,8 +1,10 @@
+package JavaAdavancedCompleteSeries;
+
 import java.net.*;
 import java.io.*;
 
 class prog22Client {
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         Socket s = new Socket("localhost", 3333);
         DataInputStream din = new DataInputStream(s.getInputStream());
         DataOutputStream dout = new DataOutputStream(s.getOutputStream());

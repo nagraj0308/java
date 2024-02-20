@@ -1,4 +1,4 @@
-/*
+package JavaAdavancedCompleteSeries;/*
 ServerSocket class
 
 The ServerSocket class can be used to create a server socket. This object is used to establish communication with the clients.

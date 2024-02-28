@@ -1,14 +1,17 @@
-import java.awt.*;
-import java.awt.event.*;
+package swing;
+
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
 
-class program53a extends JFrame implements ItemListener {
+class program05a extends JFrame implements ItemListener {
     private JTextField tf;
     private JCheckBox bb;
     private JCheckBox ib;
 
-    program53a() {
+    program05a() {
         super("The Title");
         setLayout(new FlowLayout());
 
@@ -45,9 +48,9 @@ class program53a extends JFrame implements ItemListener {
 
 }
 
-public class program53 {
+public class program05 {
     public static void main(String args[]) {
-        program53a o1 = new program53a();
+        program05a o1 = new program05a();
         o1.setSize(500, 300);
         o1.setVisible(true);
         o1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

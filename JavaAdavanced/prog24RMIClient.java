@@ -1,4 +1,4 @@
-package JavaAdavancedCompleteSeries;
+package JavaAdavanced;
 
 import java.rmi.*;
 

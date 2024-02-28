@@ -1,12 +1,16 @@
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
+package swing;
 
-class program58a extends JFrame {
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+
+class program09a extends JFrame {
     private JPanel mousepanel;
     private JLabel statusbar;
 
-    program58a() {
+    program09a() {
         super("title");
         mousepanel = new JPanel();
         mousepanel.setBackground(Color.WHITE);
@@ -53,9 +57,9 @@ class program58a extends JFrame {
     }
 }
 
-class program58 {
+class program09 {
     public static void main(String args[]) {
-        program58a o1 = new program58a();
+        program09a o1 = new program09a();
         o1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         o1.setSize(300, 200);
         o1.setVisible(true);

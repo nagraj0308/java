@@ -4,7 +4,7 @@ import java.io.File;
 
 public class program17 {
     public static void main(String[] args) {
-        File myObj = new File("/Users/macbookpro/java/basics/file.txt");
+        File myObj = new File("/Users/macbookpro/java/basics/program18a.txt");
         if (myObj.exists()) {
             System.out.println("File name: " + myObj.getName());
             System.out.println("Absolute path: " + myObj.getAbsolutePath());

@@ -1,6 +1,6 @@
 package best450;
 
-public class P008 {
+public class P008LargestSumSubArray {
 
     public static void main(String[] args) {
         int[] arr1 = {2, 4, 6, 8, 10, 18, 20};
@@ -19,6 +19,11 @@ public class P008 {
             }
             System.out.println(i + " " + j + " " + u[i + j - 1]);
         }
+    }
 
+    static void printArray(int[] arr) {
+        for (int a : arr) {
+            System.out.print(a + " ");
+        }
     }
 }

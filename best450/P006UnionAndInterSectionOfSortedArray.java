@@ -20,5 +20,28 @@ public class P006UnionAndInterSectionOfSortedArray {
             System.out.println(i + " " + j + " " + u[i + j - 1]);
         }
 
+        System.out.println("===============================");
+        int x = 0;
+        int y = 0;
+        while (x < arr1.length && y < arr2.length) {
+            try {
+                while (arr1[x] < arr2[y]) {
+                    x++;
+                }
+                while (arr1[x] > arr2[y]) {
+                    y++;
+                }
+
+                if (arr1[x] == arr2[y]) {
+                    System.out.println(x + " " + y + " " + arr1[x]);
+                    y++;
+                    x++;
+                }
+            } catch (Exception e) {
+
+            }
+
+        }
+
     }
 }

@@ -3,21 +3,27 @@ package best450;
 public class P009MaximizeMinimizeDifference {
 
     public static void main(String[] args) {
-        int[] arr1 = {2, 4, 6, 8, 10, 18, 20};
-        int[] arr2 = {6, 8, 10, 12, 14, 16, 18, 22};
-        int[] u = new int[arr1.length + arr2.length];
-
-        int i = 0;
-        int j = 0;
-        while (i < arr1.length || j < arr2.length) {
-            if (i < arr1.length && arr1[i] < arr2[j]) {
-                u[i + j] = arr1[i];
-                i++;
-            } else {
-                u[i + j] = arr2[j];
-                j++;
+        int[] arr = {23, 5, 16, 29, 2, 40, 6, 8, 10, 18, 20};
+        int K = 12;
+        int max = arr[0];
+        int min = arr[0];
+        int mni = 0;
+        int mxi = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+                mxi = i;
             }
-            System.out.println(i + " " + j + " " + u[i + j - 1]);
+            if (min > arr[i]) {
+                min = arr[i];
+                mni = i;
+            }
+        }
+        System.out.println(mni + " " + mxi + " " + arr[mni] + " " + arr[mxi]);
+        if ((2 * K) < (max - min)) {
+            System.out.println((max - min) - 2 * K);
+        } else {
+            System.out.println((max - min));
         }
 
     }

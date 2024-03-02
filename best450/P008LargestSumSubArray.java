@@ -3,27 +3,27 @@ package best450;
 public class P008LargestSumSubArray {
 
     public static void main(String[] args) {
-        int[] arr1 = {2, 4, 6, 8, 10, 18, 20};
-        int[] arr2 = {6, 8, 10, 12, 14, 16, 18, 22};
-        int[] u = new int[arr1.length + arr2.length];
+//        int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+//        int[] arr = {-2, -1, -3, -4, -1, -2, -1, -5, -4};
+        int[] arr = {-2, -1, -3, -4, 0, -2, -1, -5, -4};
 
-        int i = 0;
-        int j = 0;
-        while (i < arr1.length || j < arr2.length) {
-            if (i < arr1.length && arr1[i] < arr2[j]) {
-                u[i + j] = arr1[i];
-                i++;
-            } else {
-                u[i + j] = arr2[j];
-                j++;
+
+        int k = -1;
+        int l = -1;
+        int ls = 0;
+        for (int i = 0; i < arr.length; i++) {
+            int sum = 0;
+            for (int j = i; j < arr.length; j++) {
+                sum += arr[j];
+                if (ls < sum) {
+                    k = i;
+                    l = j;
+                    ls = sum;
+                }
             }
-            System.out.println(i + " " + j + " " + u[i + j - 1]);
         }
+        System.out.print(k + " " + l + " " + ls);
+
     }
 
-    static void printArray(int[] arr) {
-        for (int a : arr) {
-            System.out.print(a + " ");
-        }
-    }
 }

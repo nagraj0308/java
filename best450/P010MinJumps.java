@@ -1,6 +1,6 @@
 package best450;
 
-public class P010 {
+public class P010MinJumps {
 
     public static void main(String[] args) {
         int[] arr1 = {2, 4, 6, 8, 10, 18, 20};

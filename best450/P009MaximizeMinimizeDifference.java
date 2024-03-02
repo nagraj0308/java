@@ -1,6 +1,6 @@
 package best450;
 
-public class P009 {
+public class P009MaximizeMinimizeDifference {
 
     public static void main(String[] args) {
         int[] arr1 = {2, 4, 6, 8, 10, 18, 20};

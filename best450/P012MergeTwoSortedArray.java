@@ -20,8 +20,7 @@ public class P012MergeTwoSortedArray {
     static void merge(int m, int n) {
         for (int i = n - 1; i >= 0; i--) {
             int j, last = arr1[m - 1];
-            for (j = m - 2; j >= 0 && arr1[j] > arr2[i];
-                 j--)
+            for (j = m - 2; j >= 0 && arr1[j] > arr2[i];j--)
                 arr1[j + 1] = arr1[j];
 
             // If there was a greater element
